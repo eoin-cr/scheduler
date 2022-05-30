@@ -4,7 +4,7 @@ import sys
 from flask import Flask, render_template, request
 from gevent.pywsgi import WSGIServer
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 start_times = []
 end_times = []

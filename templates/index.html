@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example form</title>
+</head>
+<body>
+<h1>
+    The date that currently suits everyone the best is
+    {{ date }}.  This suits the schedule of {{ amount }} people.
+</h1>
+<h3>
+    Enter a start and end date.  After hitting submit you can enter another
+    start and end date, but please ensure all your dates are distinct (i.e.
+    don't do May 10th 2022 – May 15th 2022 and then do May 12th 2022 – May
+    30th 2022)
+</h3>
+<form name="selection" action="." method="POST">
+    <label for="start">Start Date:</label>
+    <input type="date" id="start" name="start">
+    <label for="end">End Date:</label>
+    <input type="date" id="end" name="end">
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
